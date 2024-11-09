@@ -27,7 +27,6 @@ jobs:
           pipenv run pytest --cov=tests
       - name: Run black formatter
         uses: rickstaa/action-black@v1.3.3
-
   format:
     runs-on: ubuntu-latest
     timeout-minutes: 10
@@ -60,4 +59,3 @@ jobs:
             
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-  
